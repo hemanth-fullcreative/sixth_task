@@ -1,0 +1,52 @@
+body {
+  background: linen;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background: aqua;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 100px solid lime;
+}
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background: #f34e4e;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background: salmon;
+  margin-top: 50px;
+  position: relative;
+}
+.star {
+  width: 0px;
+  height: 0px;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 100px solid #f803ec;
+  position: cbsolute;
+}
+.star:after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-top: 100px solid #f803ec;
+  border-bottom: 50px solid transparent;
+  left: 10px;
+  bottom: -50px;
+}
